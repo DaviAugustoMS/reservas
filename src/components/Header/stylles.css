@@ -11,23 +11,23 @@
   max-width: 110px;
 }
 
-.reservas {
+.minhasReservas {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
 
-.reservas div {
+.minhasReservas div {
   text-align: right;
   margin-right: 10px;
 }
 
-.reservas strong {
+.minhasReservas strong {
   color: #fff;
   display: block;
 }
 
-.reservas span {
+.minhasReservas span {
   color: #ddd;
   font-size: 15px;
 }
