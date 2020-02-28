@@ -1,0 +1,14 @@
+import { call, put, all, takeLatest } from 'redux-saga/effects';
+import { addReserverSuccess } from './actions';
+import api from '../../../services/api';
+
+
+function* addToReserve({ id }) {
+  const response = yield call(api.get, `trips/${id }`);
+
+  yield put(addReserverSuccess(response.data))
+}
+
+export default all([
+  takeLatest('ADD_RESERVE_REQUEST', addToReserve)
+])

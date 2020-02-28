@@ -25,7 +25,7 @@ export default function reserve(state = [], action ){
           }
         });
 
-        case 'UPDATE_RESERVE': {
+        case 'UPDATE_RESERVE_SUCCESS': {
 
           if(action.amount <= 0) {
             return state;
